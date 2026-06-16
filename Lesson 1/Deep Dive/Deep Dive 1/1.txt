@@ -1,0 +1,7 @@
+When operating on two arrays, NumPy compares their shapes element‑wise from the trailing (rightmost) dimension backwards. Two dimensions are compatible if:
+
+    1. They are equal, or
+
+    2. One of them is 1.
+
+If the shapes are not compatible and neither dimension is 1 → ValueError.
