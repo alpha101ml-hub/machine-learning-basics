@@ -1,0 +1,14 @@
+Deep Dive #2 - Vectorization vs Loops (with real timing)
+
+Your Connected Exercise 1.1 already showed the speed difference. But why is it so dramatic?
+
+- Python Loop: Each iteration checks types, increments counter, looks up the ist elements, performs addition, assigns back - all in Python interpreter (slow).
+
+- NumPy vectorized: The entire operations is expressed in C loops (compiled) and often uses SIMD (single Intruction Multiple Data) - CPU processes 4-8 numbers in one clock cycle.
+
+Harder exercise
+Modify your connected code to compare three methods for dot product:
+1. Pure Python loop (dot_loop)
+2. NumPy vectorized with np.sum(a*b)
+3. NumPy's np.dot(a,b)
+
