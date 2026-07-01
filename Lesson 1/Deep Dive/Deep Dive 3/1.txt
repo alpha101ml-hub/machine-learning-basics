@@ -1,0 +1,10 @@
+Deep Dive #3 - Enisum (demystified)
+
+einsum looks like magic string incantation. But it's just a mini-language for tensor contractions.
+
+The pattern: "input1_indices, input2_indices -> output_indices"
+
+- Letters represent dimensions (any letters: i,j,k,...)
+- Same letter in multiple inputs means multiply along that dinmension
+- Letter missing from output means sum over that dimension
+
